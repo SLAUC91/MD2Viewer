@@ -16,6 +16,8 @@ Window Controls:
 * Mouse Left Click - Rotation
 * Mouse Middle Button - Zoom (Click, Drag Mouse)
 * A - Model Animation
+* Spacebar - Wireframe/Solid
+* F - Type of shading
 * S/R/T - Scale, Rotate, Transform
 * +/- - Change dimentions of model S/R/T
 * 0 - Reset to original
