@@ -1,0 +1,40 @@
+#ifndef		__Point_H__
+#define		__Point_H__
+
+#include <GL/freeglut.h>
+#include <algorithm>
+
+// 3D point/vector class
+class Point {
+public:
+	// constructors
+	Point();
+	// z = 0 by default,to make it easier to use as 2D point
+	Point(double px, double py, double pz = 0.0);
+	// getters
+	const double & x() const;
+	const double & y() const;
+	const double & z() const;
+	// setters
+	double & x();
+	double & y();
+	double & z();
+
+	// dot product with another vector
+	double dot(const Point & p) const;
+	
+	// cross product with another vector
+	Point cross(const Point & p) const;
+
+	// returns a unit vector of this vector
+	Point unit(void) const;
+	// convenience function to draw this as a point using OpenGL
+	void glv(void) const;
+	// convenience function to draw this as a normal
+	void gln(void) const;
+
+private:
+	double x_, y_, z_;
+};
+
+#endif
