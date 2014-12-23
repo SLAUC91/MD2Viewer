@@ -10,7 +10,8 @@ An MD2 Viewer used with md2 file format.
 * Note: freeglut.dll must be in same dir as binary
 
 ##Usage 
-Model specified via command line argument: name.exe name.md2
+Model specified via command line argument: 
+ie: MD2.exe cobra.md2
 
 Window Controls:
 * Mouse Left Click - Rotation
