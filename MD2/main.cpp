@@ -8,26 +8,6 @@ using namespace std;
 #define M_PI 3.14159
 MD2 * m1;
 
-// addition
-Point operator + (const Point & p1, const Point & p2) {
-	return Point(p1.x() + p2.x(), p1.y() + p2.y(), p1.z() + p2.z());
-}
-
-// subtraction
-Point operator - (const Point & p1, const Point & p2) {
-	return Point(p1.x() - p2.x(), p1.y() - p2.y(), p1.z() - p2.z());
-}
-
-// unary minus
-Point operator - (const Point & p1) {
-	return Point(-p1.x(), -p1.y(), -p1.z());
-}
-
-// scalar product
-Point operator * (double a, const Point & p) {
-	return Point(a * p.x(), a * p.y(), a * p.z());
-}
-
 // global variables
 static struct {
 	// current parameters for controlling glulookat
